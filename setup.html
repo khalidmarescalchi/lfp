@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Account</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f3f3f3;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .signup-box {
+      background: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+    }
+    button {
+      background: linear-gradient(45deg, #7f00ff, #e100ff);
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 90%;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .result {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <h2>Create Account</h2>
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="showInfo()">Sign Up</button>
+    <div class="result" id="output"></div>
+  </div>
+
+  <script>
+    function showInfo() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      document.getElementById("output").innerHTML = `
+        <strong>تم تسجيل المعلومات:</strong><br>
+        👤 الاسم: ${name}<br>
+        📧 الإيميل: ${email}<br>
+        🔑 الباسورد: ${password}
+      `;
+    }
+  </script>
+</body>
+</html>
