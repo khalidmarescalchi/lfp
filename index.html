@@ -1,18 +1,93 @@
-<html>
-   <head>
-     <style>
-       Body {background-color:lightblue;
-            text-align:center;
-            font-family:Arial;
-             }
-           h1 {
-              color:darkblue
-                   }
-             </style>
-            </head>
-           <BODY>
-      <H1>HI</H1>
-      <P> WELCOME</P>
-      <botton onclick="alert('khalid')">love</botton>
-   </BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f3f3f3;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-box {
+      background: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .login-header {
+      background: linear-gradient(45deg, #7f00ff, #e100ff);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px;
+      border-radius: 10px 10px 0 0;
+      margin: -20px -20px 20px -20px;
+    }
+
+    .login-box input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+    }
+
+    .login-box a {
+      display: block;
+      margin: 10px 0;
+      font-size: 12px;
+      color: #7f00ff;
+      text-decoration: none;
+    }
+
+    .login-box button {
+      background: linear-gradient(45deg, #7f00ff, #e100ff);
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 90%;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .signup {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .signup a {
+      color: #7f00ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="login-header">Login Form</div>
+    <input type="email" placeholder="Email Address">
+    <input type="password" placeholder="Password">
+    <a href="#">Forgot password?</a>
+    <button>Login</button>
+    <div class="signup">
+    <button class="btn" onclick="window.location.href='setup.html'">
+  Setup
+</button>
+
+     
+    </div>
+  </div>
+</body>
+</html>
